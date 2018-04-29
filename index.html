@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="appl">
+    <head>
+        <title>Senor Test</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="javascript/jquery-1.11.3.js"></script>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="lib-ang/angular.min.js"></script>
+        <script src="lib-ang/angular-route.min.js"></script>
+        <script src="lib-ang/angular-ui-router.js"></script>
+        <script src="lib-ang/sanitize.js"></script>
+        <script src = "javascript/appl.js" ></script>
+        <script src="javascript/config.js"></script>
+        <script src="javascript/controllers.js"></script>
+        <script src="javascript/service.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    </head>
+    <body>
+        <div id="wrapper-common" class="container">
+            <ng-include src="'partials/menu.html'"></ng-include>
+            <div id="content" ui-view="content"></div>
+        </div>
+    </body>
+</html>
